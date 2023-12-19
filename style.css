@@ -1,0 +1,71 @@
+div {
+    background: rgb(241, 133, 133);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.custom-ol {
+    list-style: none;
+    padding: 15px;
+    counter-reset: my-awesome-counter;
+}
+
+.custom-ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    background: rgb(247, 106, 106);
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-ol li {
+    color: white;
+    counter-increment: my-awesome-counter;
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 0;
+    background: rgb(207, 102, 102);
+}
+
+span {
+    background: rgb(134, 29, 29);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+
+
+
+h1 {
+    margin-left: 3%;
+}
+
+.custom-li-done {
+    list-style-image: url(checked_16.png);
+    text-decoration: line-through;
+    background-color: white !important;
+}
+
+.Custom-list {
+    list-style-type: none;
+    list-style-position: inside;
+    list-style-image: url(unchecked_16.png);
+    height: 50px;
+    margin-right: 30%;
+    line-height: 50px;
+}
+
+.Custom-list li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.Custom-list li:nth-child(even) {
+    background-color: rgb(224, 247, 255);
+}
